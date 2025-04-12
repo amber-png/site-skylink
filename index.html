@@ -1,0 +1,129 @@
+<!-- PAGE ACCUEIL -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil - SkyLink Agency</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    .hero {
+      position: relative;
+      text-align: center;
+    }
+    .hero img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+    .hero-text {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+  .cta {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  text-align: center;
+  max-width: 90%;
+}
+
+    .cta a {
+      background-color: white;
+      color: black;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      transition: none;
+    }
+    .cta a:hover {
+      background-color: white;
+      color: black;
+      box-shadow: none;
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .hero-text {
+        font-size: 1.1rem;
+        padding: 10px;
+      }
+      .cta {
+        top: 73%;
+      }
+      .cta a {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SkyLink Agency</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Nos services</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <img src="assets/images/hero.jpg" alt="Bannière SkyLink">
+    <div class="hero-text">On fait des sites qui rendent jaloux les concurrents</div>
+    <div class="cta">
+      <a href="contact.html">Discutons ensemble</a>
+    </div>
+  </section>
+</body>
+</html>
+
+<!-- PAGE SERVICES -->
+<!-- même logique CSS responsive avec image large + texte centré, espacement, etc. -->
+
+<!-- PAGE PROJETS -->
+<!-- idem avec images responsives en grille -->

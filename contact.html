@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - SkyLink Agency</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #000;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .contact-section {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .contact-section img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 20px;
+      border-radius: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea, select {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding-top: 10px;
+      }
+
+      .contact-section {
+        padding: 10px;
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SkyLink Agency</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Nos services</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <img src="assets/images/image-violette.jpg" alt="Illustration violette">
+    <h1>Parce que votre projet mérite un nouveau départ</h1>
+
+    <form>
+      <input type="text" name="name" placeholder="Votre nom" required />
+      <input type="email" name="email" placeholder="Votre email" required />
+      <select name="service">
+        <option value="">Que souhaitez-vous ?</option>
+        <option value="refonte">Refonte de site</option>
+        <option value="seo">Optimisation SEO</option>
+        <option value="logo">Création de logo</option>
+        <option value="site-vitrine">Site vitrine</option>
+        <option value="autre">Autre</option>
+      </select>
+      <textarea name="message" rows="5" placeholder="Décrivez votre projet ici..." required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+</body>
+</html>
